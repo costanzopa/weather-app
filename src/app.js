@@ -5,9 +5,16 @@ const geocode = require('./utils/geocode.js');
 const forecast = require('./utils/forecast.js');
 
 const app = express()
-const publicDirectoryPath = path.join(__dirname, '../public')
 
+// Define paths for Express config 
+const publicDirectoryPath = path.join(__dirname, '../public')
+const viewsDirectoryPath = path.join(__dirname, '../templates')
+
+// Setup handlebars engine and views location
 app.set('view engine', 'hbs')
+app.set('view', viewsDirectoryPath)
+
+// Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
