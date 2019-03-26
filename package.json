@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/costanzopa/weather-app.git"
+  },
+  "author": "Pablo Costanzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/costanzopa/weather-app/issues"
+  },
+  "homepage": "https://github.com/costanzopa/weather-app#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
