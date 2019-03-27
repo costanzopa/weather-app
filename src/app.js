@@ -36,8 +36,14 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.'
+        title: 'Help',
+        helpText: 'This is some helpful text.',
+        name: 'Pablo Costanzo'
     })
+})
+
+app.get('*', (req, res) => {
+    res.render('404')
 })
 
 app.get('/weather', (req, res) => {
